@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator Sarthak Vyavahare</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<head>
+  <img src="/Users/sarthak/Desktop/Txon/TXON_02/flc_design20230219117472.png" class="logo">
+<nav>
+  <ul>
+      <li><a href="">CALCULATOR</a></li>
+    </ul>
+  </nav>
+</head>
+<body>
+	<div class="calculator">
+		<div class="screen">
+			<input type="text" id="screen" readonly>
+		</div>
+		<div class="buttons">
+			<button class="number" onclick="addToScreen('7')">7</button>
+			<button class="number" onclick="addToScreen('8')">8</button>
+			<button class="number" onclick="addToScreen('9')">9</button>
+			<button class="operator" onclick="addToScreen('/')">/</button>
+			<button class="number" onclick="addToScreen('4')">4</button>
+			<button class="number" onclick="addToScreen('5')">5</button>
+			<button class="number" onclick="addToScreen('6')">6</button>
+			<button class="operator" onclick="addToScreen('*')">*</button>
+			<button class="number" onclick="addToScreen('1')">1</button>
+			<button class="number" onclick="addToScreen('2')">2</button>
+			<button class="number" onclick="addToScreen('3')">3</button>
+			<button class="operator" onclick="addToScreen('-')">-</button>
+			<button class="number" onclick="addToScreen('0')">0</button>
+			<button class="number" onclick="addToScreen('.')">.</button>
+			<button class="equals" onclick="calculate()">=</button>
+			<button class="operator" onclick="addToScreen('+')">+</button>
+			<button class="clear" onclick="clearScreen()">Clear</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

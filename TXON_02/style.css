@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+  }
+  .logo {
+    width: 185px;
+    margin-top: 10px;
+    padding-left: 0px;
+    cursor: pointer;
+}
+  body {
+    height: 100vh;
+    /* background: linear-gradient(to bottom, #49bda6 50%, #1e258b 50%); */
+    background-image: url(/Users/sarthak/Desktop/Txon/TXON_02/images.png);
+    background-repeat: none;
+    background-size: cover;
+  }
+  nav {
+    flex: 1;
+    padding-left: 575px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 3000;
+    margin-top: 50px;
+}
+  .calculator {
+    width: 600px;
+    background-color: #02280c;
+    padding: 50px 25px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(24, 19, 0, 0.4);
+  }
+  .display {
+    width: 100%;
+  }
+  .display input {
+    width: 100%;
+    padding: 15px 10px;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    color: #1e1d1d;
+    font-size: 35px;
+  }
+  .display input::placeholder {
+    color: #131212;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin-top: 40px;
+  }
+  .buttons input[type="button"] {
+    font-size: 30px;
+    padding: 17px;
+    border: none;
+    background-color: transparent;
+    color: #1b1a1a;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .buttons input[type="button"]:hover {
+    box-shadow: 0 20px 25px #abab48;
+  }
+  input[type="button"]#equal {
+    grid-row: span 2;
+    background-color: #5a357d;
+  }
+  input[type="button"][value="0"] {
+    grid-column: span 2;
+  }
